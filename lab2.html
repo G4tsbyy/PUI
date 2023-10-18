@@ -1,0 +1,173 @@
+<!DOCTYPE html> <!-- Ustawienie typu pliku jako html -->
+<html> <!-- Podstawowy znacznik, okala całą stronę -->
+    <head> <!-- "Ustawienia strony", tego co się tu wpisze nie widać (oprócz tytułu) -->
+        <meta charset="UTF-8"> <!-- Ustawienie kodowania polskich znaków -->
+        <title>Curriculum Vitae</title> <!-- Tytuł strony (ten w karcie na górze) -->
+    </head>
+    <body> <!-- Znacznik "ciała" strony, wszystko to co będzie widoczne -->
+        <header> <!-- Nagłówek strony -->
+            <h1>Curriculum Vitae</h1> <!-- Nagłówek, nagłówki są od h1 do h6 i z każdym kolejnym są coraz mniejsze, h1 najczęściej używa się tylko raz gdzieś na górze -->
+			<nav> <!-- Nawigacja, tu zazywczaj są jakieś linki -->
+				<a href="#dane"> <!-- Link do danej etykiety (etykieta będzie później w komentarzach), jeśli miejsce, do którego odsyła link jest w tym samym pliku to trzeba pamiętać o "#" -->
+					Dane osobowe
+				</a>
+				<a href="#edukacja"> <!-- Link do danej etykiety -->
+					Edukacja
+				</a>
+				<a href="#doswiadczenie"> <!-- Link do danej etykiety -->
+					Doświadczenie
+				</a>
+				<a href="#umiejetnosci"> <!-- Link do danej etykiety -->
+					Umiejętności
+				</a>
+				<a href="#jezyki"> <!-- Link do danej etykiety -->
+					Języki
+				</a>
+				<a href="#zainteresowania"> <!-- Link do danej etykiety -->
+					Zainteresowania
+				</a>
+				<a href="#kontakt"> <!-- Link do danej etykiety -->
+					Kontakt
+				</a>
+			</nav>
+		</header>
+        <main> <!-- Główny znacznik strony, tutaj jest cała treść -->
+            <section> <!-- Sekcja, można powiedzieć że to taki akapit  -->
+                <h2> <!-- Nagłówek danego akapitu, w tym wypadku mniejszy od h1 i już wszędzie będzie h2 bo są tak jakby "równoważne" te inne akapity -->
+                    <a id="dane">  <!-- Etykieta, jeśli w znaczniku <a> jest href to jest to odnośnik do czegoś, a jeśli id to etykieta i do tego można się odnosić jak wyżej (link z 11 linijki odsyła do tej etykiety) -->
+                        Dane osobowe
+                    </a>
+                </h2>
+                <table> <!-- Tabela, tabele zawsze pisze się na zasadzie <table> -> <tr> (table row, wiersz tabeli) -> <td> (table data, komórka tabeli), jest jeszcze <th> (table header, komórka nagłówkowa)-->
+				<!-- 
+				Dla przykładu, na pustej tabeli byłoby w taki sposób
+				<table> - tabela
+					<tr> - wiersz
+						<td></td> - komórka
+						<td></td> - komórka
+					</tr>
+					<tr> - wiersz
+						<td></td> - komórka
+						<td></td> - komórka
+					</tr>
+				</table> 
+
+				I taka tabela to są 2 wiersze i 2 kolumny, jak już jest wiersz to pierwszy znacznik <td> w nim tworzy komórkę, a każdy następny też komórkę, ale w tym samym wierszu, więc już przy dwóch znacznikach <td> będą 2 kolumny
+				-->
+                    <tr> <!-- Wiersz tabeli -->
+                        <td> <!-- Komórka tabeli -->
+                            <i> <!-- Italic, kursywa -->
+                                Jan Kowalski<br> <!-- break, przejście do linii niżej -->
+                                ul. Gwarna 4/6<br> <!-- break -->
+                                61-444 Poznań<br> <!-- break -->
+                                e-mail: <a href="mailto:ja@jankowalski.pl">ja@jankowalski.pl</a> <!-- znacznik <a> z argumentem href="mailto:adres" otwiera domyślny mail ustawiony na komputerze i tworzy nową wiadomość na adres podany po dwukropku -->
+                            </i>
+                        </td> 
+                        <td> <!-- Komórka tabeli -->
+                            <img src="zdjecie.jpg"> <!-- Znacznik zdjęcia, argument src odpowiada za ścieżkę pliku, w tym przypadku plik jest w tym samym folderze wiec podaje się tylko nazwę, gdyby był np. w folderze zdjecia to ścieżka wyglądałaby tak: zdjecia/zdjecie.jpg -->
+                        </td>
+                    </tr>
+                </table> <!-- Zamknięcie tabeli -->
+                <hr> <!-- Linia pozioma -->
+            </section>
+			<!-- Dalej wszystkie sekcje to to samo to nie będę pisał znowu, dopiero w <form> są dalsze komentarze -->
+            <section>
+                <h2>
+                    <a id="edukacja">
+                        Edukacja
+                    </a>
+                </h2>
+                <ul>
+                    <li>2019-2023 Technikum</li>
+                    <li>2017-2019 Gimnazjum</li>
+                    <li>2012-2019 Szkoła podstawowa</li>
+                </ul>
+                <hr>
+            </section>
+            <section>
+                <h2>
+                    <a id="doswiadczenie">
+                        Doświadczenie
+                    </a>
+                </h2>
+                <ul>
+                    <li>2023 - xyz</li>
+                    <li>2022 - xyz</li>
+                    <li>2022 - xyz</li>
+                </ul>
+                <hr>
+            </section>
+            <section>
+                <h2>
+                    <a id="umiejetnosci">
+                        Umiejętności
+                    </a>
+                </h2>
+                <ul>
+                    <li>Prawo jazdy kat. B</li>
+                    <li>Ceryfikat CISCO</li>
+                    <li>Ceryfikat Linux Essentials</li>
+                    <li>Certyfikat PCEP</li>
+                </ul>
+                <hr>
+            </section>
+            <section>
+                <h2>
+                    <a id="jezyki">
+                        Języki
+                    </a>
+                </h2>
+                <ul>
+                    <li>Angielski - biegle w mowie i w piśmie</li>
+                    <li>Royjski - poziom podstawowy</li>
+                    <li>Włoski - poziom podstawowy</li>
+                </ul>
+                <hr>
+            </section>
+            <section>
+                <h2>
+                    <a id="zainteresowania">
+                        Zainteresowania
+                    </a>
+                </h2>
+                <ul>
+                    <li>xyz</li>
+                    <li>xyz</li>
+                    <li>xyz</li>
+                </ul>
+                <hr>
+            </section>
+            <section>
+                <h2>
+                    <a id="kontakt">
+                        Kontakt
+                    </a>
+                </h2>
+                <form action="mailto:ja@jankowalski.pl" method="post" enctype="application/x-www-form-urlencoded"> <!-- Znacznik formularza, action określa co formularz zrobi po wciśnięciu przycisku "Wyślij", method jest opisane na eKursach na dole 7 strony, enctype tak samo -->
+                    <table> <!-- Tabela tak jak wyżej  -->
+                        <tr> <!-- Wiersz tabeli, jak wyżej -->
+                            <td> <!-- Komórka tabeli, jak wyżej -->
+                                <input type="email" name="email" value="e-mail"> <!-- Pole do wprowadzania danych, typy są na górze 8 strony na eKursach, np. typ email sprawdza czy w polu jest wpisana "@", jeśli nie to nie daje wysłać formularza, na eKursach jest value i wtedy jest od razu wpisane "e-mail", a można zamiast tego dać placeholder="e-mail" i wtedy będzie na szaro i samo znika jak się wpisze cokolwiek -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea name=”pole” rows=”10” cols=”50”>Twoja wiadomość</textarea> <!-- Obszar do wpisywania tekstu, rows i cols to wiersze i kolumny, określenie rozmiaru tego pola  -->
+                            </td>
+                        </tr>
+                    </table>
+                    <button type="submit">Wyślij</button> <!-- Przycisk, type="submit" działa tak, że po kliknięciu tego przycisku wykonuje się action ze znacznika <form> -->
+                    <button type="reset">Wyczyść</button> <!-- Przycisk, type="reset" czyści wszystkie wartości formularza i go nie wysyła -->
+                </form>
+                <hr>
+            </section>
+        </main>
+        <footer> <!-- Znacznik stopki strony, tam najczęściej jest jakiś kontakt czy jak w tym wypadku zgoda na przetwarzanie danych osobowych -->
+            <small> <!-- Znacznik sprawiający, że czcionka jest mniejsza -->
+                <i> <!-- Italic, kursywa -->
+                    Wyrażam zgodę na przetwarzanie moich danych osobowych w celu prowadzenia rekrutacji na aplikowane przeze mnie stanowisko.
+                </i>
+            </small>
+        </footer>
+    </body>
+</html>
